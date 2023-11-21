@@ -1,0 +1,111 @@
+body{
+    background-color: black;
+    margin: 0;
+    user-select: none;
+}
+
+
+.hearts{
+    margin-top: 0px;
+    margin-left: 2%;
+    width: 50%;
+}
+
+
+.pointer {
+    position: absolute;
+    height: 360px;
+    width: 360px; 
+    pointer-events: none;
+    display: none;
+    text-align: center;
+    transform: translate(-50% ,-50%);
+    z-index: 10000;
+}
+
+/* .pointer img {
+    width: 140px;
+} */
+
+.stats{
+    margin: 2%;
+    padding: 5px;
+}
+
+.heart{
+    width: 90px;
+    height: 90px;
+}
+
+.score {
+    color: #fff;
+    font-size: 90px;
+    font-weight: bold;
+    float: right;    
+}
+
+.board {
+    height:100vh;
+    background: #000000;
+    overflow: hidden;
+    position: relative;
+    background: url(board-bg.jpg);
+    cursor: default;
+}
+
+.zombie {
+    width: 200px;
+    height: 312px;
+    background: url(walkingdead.png);
+    position: absolute;
+    left: 110%;
+    bottom: 100px;
+    animation: zombieAnimation 0.5s steps(9) 0s infinite, 
+        zombieWalk 10s linear 0s 1;
+}
+
+.startGame{
+    background-color: white;
+    font-size: 100px;
+    border: 5px solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    cursor: default;
+}
+.startGame:hover {
+    background-color: rgb(172, 170, 170);    
+  }
+  
+  
+.endGame{
+    display: none;
+    background-color: white;
+    font-size: 55px;
+    border: 5px solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    text-align: center;
+    cursor: default;
+}
+.endGame:hover {
+    background-color: rgb(172, 170, 170);    
+  }
+  
+@keyframes zombieAnimation {
+    100% {
+        background-position: -1800px;
+    }
+    
+}
+
+@keyframes zombieWalk {
+    100% {
+        left: -300px;
+    }
+}
