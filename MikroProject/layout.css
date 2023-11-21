@@ -1,0 +1,139 @@
+body {
+  background-image: url('images/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 0.85;
+  margin: 0px;
+  padding: 0px;
+  font-size: 150%;
+  cursor: default;
+
+}
+
+header {
+  background-color: rgba(72, 69, 69, 0.372);
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+section{
+  background-color: #000000;
+  content: "";
+  clear: both;
+  display: block;
+}
+
+nav {
+  flex: 1;
+  background-color: #333;
+  margin: 0px;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  background-color: #333;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+
+nav li  {
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+  background-color: #151f3b;
+  border: 1px solid #000000;
+  display: inline-block;
+  font-weight: bold;
+}
+
+nav li.nonactive:hover {
+  background-color: #151f3b79;
+  border: 1px solid #333;
+}
+
+nav li.active:hover {background-color: #0a3b1545;}
+
+nav li.active {background-color: #0a3b15;}
+
+
+article {
+  flex: 3;
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  padding-left: 30px;
+  color: white;
+  min-height: 55.4vh;
+}
+
+footer {
+  background-color: #3a3a3a;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+div.foto {
+  float:inline-end;
+  margin-top: 70px;
+}
+
+
+div.text{
+  float: sticky;
+  padding-right: 50px;
+  overflow: auto;
+}
+
+h4 {
+  margin-bottom: 5px;
+}
+
+img.comp_image{
+  border-radius: 25px;
+  opacity: 1;
+}
+
+@media screen and (max-width: 850px) { 
+  nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  nav li{
+    display: block;
+  }
+  
+  div {
+    display: block;
+    }
+  div.text{
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;  
+    padding-right: 0px;
+  }
+  div.foto{
+    margin-top: 10px;
+    float: none;
+    text-align: center;
+  }
+
+
+}
+
+@media screen and (max-width: 500px){
+  header{
+    font-size: 20px;
+  }
+
+  body{
+    font-size: 100%;
+  }
+}
