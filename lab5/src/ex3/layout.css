@@ -1,0 +1,40 @@
+
+nav {
+    flex: 1;
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  
+  nav li  {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    background-color: #0e351c;
+    border: 1px solid #000000;
+    display: inline-block;
+    font-weight: bold;
+    cursor: default;
+  }
+  
+  nav li.nonactive:hover {
+    background-color: #151f3b79;
+    border: 1px solid #333;
+  }
+  
+  nav li:hover {background-color: #1c6530;}
+  
+  a:visited { 
+    text-decoration: none; 
+    color:white;
+   }
